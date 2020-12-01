@@ -11,7 +11,7 @@ app.url_map.strict_slashes = False
 app.config['DEBUG'] = True
 app.config['ENV'] = 'development'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{}:{}@{}/{}'.format(environ.get("DBUSER"), environ.get("DBPASS"), environ.get("DBHOST"), environ.get("DBNAME")))
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{}:{}@{}/{}'.format(environ.get("DBUSER"), environ.get("DBPASS"), environ.get("DBHOST"), environ.get("DBNAME"))
 manager = Manager(app)
 
 
